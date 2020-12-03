@@ -7,7 +7,7 @@ const { optimizeCSSAssetsPlugin, externals } = require('./webpack.common');
 module.exports = Object.assign({}, baseConfig, {
     mode: 'production',
     entry: {
-        'mb-sui.umd': path.resolve(__dirname, '../index.ts')
+        'sc-ui.umd': path.resolve(__dirname, '../index.ts')
     },
     output: {
         path: path.join(config.build.outputRootPath, 'umd'),

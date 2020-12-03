@@ -1,2 +1,2 @@
-# mb-sui
+# sc-ui
 mobile ui
