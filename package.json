@@ -1,0 +1,85 @@
+{
+  "name": "mb-sui",
+  "version": "1.0.2",
+  "description": "mobile ui",
+  "main": "dist/lib/mb-sui.common.js",
+  "module": "dist/es/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "scripts": {
+    "dev": "cross-env webpack-dev-server --config ./scripts/webpack.dev.config.js",
+    "build:es": "cross-env NODE_ENV=production tsc && copyfiles ./components/**/*.scss ./public/images/* ./dist/es/ && node ./scripts/define-plugin.js",
+    "build:lib": "cross-env NODE_ENV=production webpack --config ./scripts/webpack.lib.config.js",
+    "build:umd": "cross-env NODE_ENV=production webpack --config ./scripts/webpack.umd.config.js",
+    "build:all": "npm run build:es && npm run build:lib && npm run build:umd",
+    "test": "jest --config=jest.config.js",
+    "prepublishOnly": "npm run build:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinyanlv/m-sui.git"
+  },
+  "keywords": [
+    "mobile",
+    "ui"
+  ],
+  "author": "bugong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yinyanlv/m-sui/issues"
+  },
+  "homepage": "https://github.com/yinyanlv/m-sui#readme",
+  "dependencies": {
+    "@ant-design/css-animation": "^1.7.3",
+    "axios": "^0.20.0",
+    "classnames": "^2.2.6",
+    "m-tis-icons": "0.0.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@types/classnames": "^2.2.10",
+    "@types/enzyme": "^3.10.7",
+    "@types/jest": "^26.0.14",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^10.0.3",
+    "babel-jest": "^26.3.0",
+    "chalk": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copyfiles": "^2.4.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "css-modules-typescript-loader": "^4.0.0",
+    "cssnano": "^4.1.10",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "file-loader": "^6.1.1",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.4.1",
+    "jest": "^26.4.2",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss": "^8.1.10",
+    "postcss-loader": "^4.1.0",
+    "prettier": "^2.1.2",
+    "react-test-renderer": "^16.13.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.3.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "browserslist": [
+    ">0.1%"
+  ]
+}

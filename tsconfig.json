@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/es",
+        "declaration": true, 
+        "declarationDir": "dist/typings",
+        "baseUrl": "", 
+        "module": "esnext",
+        "target": "es2015",
+        "lib": [
+            "es6",
+            "dom"
+        ], 
+        "sourceMap": true, 
+        "jsx": "react",
+        "moduleResolution": "node", 
+        "rootDir": ".",
+        "noImplicitReturns": true, 
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "importHelpers": true, 
+        "strictNullChecks": true, 
+        "esModuleInterop": true
+    },
+    "includes": [
+        "components/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "config",
+        "public",
+        "site",
+        "test",
+        "dist",
+        "**/__tests__"
+    ]
+}
