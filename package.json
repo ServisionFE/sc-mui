@@ -2,7 +2,7 @@
   "name": "sc-ui",
   "version": "0.0.1",
   "description": "mobile ui",
-  "main": "dist/lib/sc-ui.common.js",
+  "main": "dist/lib/sc-ui.pack.js",
   "module": "dist/es/index.js",
   "typings": "dist/typings/index.d.ts",
   "scripts": {
