@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    moduleName: 'sc-ui',
+    moduleName: 'sc-mui',
     prefixCls: 'sui-',
     build: {
         env: {

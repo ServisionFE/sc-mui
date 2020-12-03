@@ -1,2 +1,2 @@
-# sc-ui
+# sc-mui
 mobile ui

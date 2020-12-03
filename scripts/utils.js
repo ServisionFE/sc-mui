@@ -8,7 +8,7 @@ exports.isProd = function() {
 
 exports.getComponentsEntry = function() {
     const entry = {};
-    const cmpsFilename = 'sc-ui.pack';
+    const cmpsFilename = 'sc-mui.pack';
     const pattern = path.join(__dirname, '../components/**/index.ts');
     try {
         console.log(chalk.green('Begin scan components...'));

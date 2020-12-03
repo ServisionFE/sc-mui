@@ -1,8 +1,8 @@
 {
-  "name": "sc-ui",
+  "name": "sc-mui",
   "version": "0.0.1",
   "description": "mobile ui",
-  "main": "dist/lib/sc-ui.pack.js",
+  "main": "dist/lib/sc-mui.pack.js",
   "module": "dist/es/index.js",
   "typings": "dist/typings/index.d.ts",
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ServisionFE/sc-ui.git"
+    "url": "git+https://github.com/ServisionFE/sc-mui.git"
   },
   "keywords": [
     "mobile",
@@ -25,9 +25,9 @@
   "author": "bugong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ServisionFE/sc-ui/issues"
+    "url": "https://github.com/ServisionFE/sc-mui/issues"
   },
-  "homepage": "https://github.com/ServisionFE/sc-ui#readme",
+  "homepage": "https://github.com/ServisionFE/sc-mui#readme",
   "dependencies": {
     "@ant-design/css-animation": "^1.7.3",
     "axios": "^0.20.0",
